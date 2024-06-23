@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: url('https://images4.alphacoders.com/878/87844.jpg');
+  background-size: cover;
+}
+
+#root {
+  padding: 10px;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  background: rgb(255, 255, 255);
+  font-size: 28px;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  margin: 2px;
+  vertical-align: middle;
+}
+
+.square:hover {
+  transition: 200ms;
+  transform: scale(1.3);
+  background: rgba(255, 255, 255, 0);
+}
+
+.game {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 310px;
+  background-color: rgba(37, 124, 255, 0.575);
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.game .game-info ol {
+  list-style-type: none;
+}
+.game .game-info ol li {
+  margin: 5px 0px;
+}
+.game .game-info ol li button {
+  width: 150px;
+  padding: 4px;
+  background-color: rgba(61, 177, 255, 0.548);
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.game .game-info ol li button:hover {
+  transition: 300ms;
+  transform: scaleX(1.2);
+  background-color: rgb(61, 177, 255);
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
