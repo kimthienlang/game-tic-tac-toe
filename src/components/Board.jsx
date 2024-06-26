@@ -9,7 +9,7 @@ export default function Board({ xIsNext, squares, onPlay }) {
 
     const nextSquares = squares.slice();
     if (xIsNext) {
-      nextSquares[i] = "J";
+      nextSquares[i] = "X";
     } else {
       nextSquares[i] = "O";
     }
